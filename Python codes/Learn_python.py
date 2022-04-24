@@ -1,7 +1,6 @@
 import pandas as pd
-df = pd.read_excel (r'\Users\sindhucharan\Downloads\Start-Up-Loans-Cash-Flow-Forecast.xlsx')
+path="/Users/sindhucharan/Downloads/dataforviz.xlsx"
+df = pd.read_excel (path, sheet_name='sheet1')
+
 print (df)
 
-print("Hello.Git")
-print("Hello-world")
-print("Hello-world-again")
