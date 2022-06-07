@@ -1,0 +1,31 @@
+import requests
+import numpy as np
+import pandas as pd
+
+r = requests.get('https://coderbyte.com/api/challenges/json/list-numbers')
+w=print(r.json()['data'])
+
+print(r)
+
+i=np.array(w)
+
+print(i)
+
+sd=np.std(w)
+sd=round(sd,0)
+print(sd)
+
+mean=np.mean(w)
+output = [x for x in arr if (sd> mean - 2 * sd)]
+output = [x for x in output if (x < mean + 2 * sd)]
+
+
+
+
+
+
+
+
+
+
+
